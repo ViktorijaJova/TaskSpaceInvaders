@@ -8,6 +8,7 @@ public class EnemyCollisions : MonoBehaviour
     public GameObject gamehandler;
     public GameObject explosion;
     public GameObject soundManager;
+
     private void OnTriggerEnter(Collider colObj)
     {
         if(colObj.gameObject.tag == "Bullet")
@@ -27,4 +28,9 @@ public class EnemyCollisions : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
     }
+
+ 
+
+
+
 }

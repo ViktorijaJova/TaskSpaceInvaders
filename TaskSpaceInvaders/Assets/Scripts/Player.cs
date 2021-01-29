@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        playerController = GetComponent<CharacterController>();    
+        playerController = GetComponent<CharacterController>();
     }
 
     void Update()
@@ -21,10 +22,13 @@ public class Player : MonoBehaviour
         playerController.Move(movmenet * Time.deltaTime * 50);
         if (Input.GetKeyDown("space"))
         {
-         soundManager.SendMessage("PlayBulletSound");
+            soundManager.SendMessage("PlayBulletSound");
             GameObject newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
             newBullet.GetComponent<Rigidbody>().AddForce(Vector3.up * 2000);
-            Destroy(newBullet, 3); 
+            Destroy(newBullet, 3);
         }
     }
-}
+    
+
+  
+    }

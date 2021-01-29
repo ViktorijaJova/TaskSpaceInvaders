@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 50581566}
   - component: {fileID: 50581565}
   - component: {fileID: 50581564}
+  - component: {fileID: 50581570}
   m_Layer: 0
   m_Name: Enemy (20)
   m_TagString: Untagged
@@ -254,6 +255,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &50581570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50581563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aadbd532f0de1e24ba8bd57f4dcac5b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondbullet: {fileID: 8395506815267064393, guid: 29ab1670daf830948ab48b7edd267064, type: 3}
+  minimumShootDelay: 1
+  maximumShootDelay: 10
 --- !u!1 &258349404
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,6 +1424,7 @@ GameObject:
   - component: {fileID: 769350899}
   - component: {fileID: 769350898}
   - component: {fileID: 769350897}
+  - component: {fileID: 769350903}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Untagged
@@ -1525,6 +1542,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &769350903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769350896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aadbd532f0de1e24ba8bd57f4dcac5b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondbullet: {fileID: 8395506815267064393, guid: 29ab1670daf830948ab48b7edd267064, type: 3}
+  minimumShootDelay: 1
+  maximumShootDelay: 10
 --- !u!1 &860398638
 GameObject:
   m_ObjectHideFlags: 0
@@ -1540,9 +1572,11 @@ GameObject:
   - component: {fileID: 860398644}
   - component: {fileID: 860398645}
   - component: {fileID: 860398639}
+  - component: {fileID: 860398646}
+  - component: {fileID: 860398647}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1671,6 +1705,35 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 80, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &860398646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860398638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2522e0a3e5740cb40bb72876f764d2ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gibs: []
+  spawnRadius: 3
+  exlosionForce: 0
+--- !u!114 &860398647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860398638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90284aca37ba3b743a54efdb8d0d55ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 8753190788406569025, guid: 0eb9183af3509f24782964e124ae1faf, type: 3}
+  soundManager: {fileID: 963194225}
 --- !u!1 &877165553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1780,6 +1843,7 @@ GameObject:
   - component: {fileID: 923269107}
   - component: {fileID: 923269106}
   - component: {fileID: 923269105}
+  - component: {fileID: 923269111}
   m_Layer: 0
   m_Name: Enemy (5)
   m_TagString: Untagged
@@ -1897,6 +1961,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &923269111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923269104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aadbd532f0de1e24ba8bd57f4dcac5b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondbullet: {fileID: 8395506815267064393, guid: 29ab1670daf830948ab48b7edd267064, type: 3}
+  minimumShootDelay: 1
+  maximumShootDelay: 10
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2892,6 +2971,7 @@ GameObject:
   - component: {fileID: 1526700791}
   - component: {fileID: 1526700790}
   - component: {fileID: 1526700789}
+  - component: {fileID: 1526700795}
   m_Layer: 0
   m_Name: Enemy (8)
   m_TagString: Untagged
@@ -3009,6 +3089,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1526700795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526700788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aadbd532f0de1e24ba8bd57f4dcac5b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondbullet: {fileID: 8395506815267064393, guid: 29ab1670daf830948ab48b7edd267064, type: 3}
+  minimumShootDelay: 1
+  maximumShootDelay: 10
 --- !u!1 &1631766174
 GameObject:
   m_ObjectHideFlags: 0
@@ -3285,6 +3380,7 @@ GameObject:
   - component: {fileID: 1787563120}
   - component: {fileID: 1787563119}
   - component: {fileID: 1787563118}
+  - component: {fileID: 1787563124}
   m_Layer: 0
   m_Name: Enemy (19)
   m_TagString: Untagged
@@ -3402,6 +3498,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1787563124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787563117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aadbd532f0de1e24ba8bd57f4dcac5b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondbullet: {fileID: 8395506815267064393, guid: 29ab1670daf830948ab48b7edd267064, type: 3}
+  minimumShootDelay: 1
+  maximumShootDelay: 10
 --- !u!1 &1819762154
 GameObject:
   m_ObjectHideFlags: 0
@@ -3461,6 +3572,7 @@ GameObject:
   - component: {fileID: 1895736331}
   - component: {fileID: 1895736330}
   - component: {fileID: 1895736329}
+  - component: {fileID: 1895736335}
   m_Layer: 0
   m_Name: Enemy (16)
   m_TagString: Untagged
@@ -3578,6 +3690,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1895736335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895736328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aadbd532f0de1e24ba8bd57f4dcac5b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondbullet: {fileID: 8395506815267064393, guid: 29ab1670daf830948ab48b7edd267064, type: 3}
+  minimumShootDelay: 1
+  maximumShootDelay: 10
 --- !u!1 &2021340920
 GameObject:
   m_ObjectHideFlags: 0
